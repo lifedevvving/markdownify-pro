@@ -1,0 +1,34 @@
+{
+  "name": "markdownify-pro",
+  "version": "1.0.0",
+  "description": "Convert HTML pages, PDFs, and Word docs to clean Markdown",
+  "main": "src/markdownify-pro.js",
+  "bin": {
+    "markdownify-pro": "src/markdownify-pro.js"
+  },
+  "scripts": {
+    "start": "node src/markdownify-pro.js",
+    "test": "node --test src/*.test.js 2>/dev/null || echo 'No tests found — add tests in src/*.test.js'",
+    "lint": "eslint src/ --ext .js",
+    "tracker": "node src/achievement-tracker.js",
+    "roadmap": "node src/achievement-tracker.js"
+  },
+  "keywords": ["markdown", "html", "pdf", "docx", "converter", "cli"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "turndown": "^7.1.2",
+    "turndown-plugin-gfm": "^1.0.2",
+    "mammoth": "^1.7.0",
+    "node-html-parser": "^6.1.13",
+    "commander": "^12.0.0",
+    "chalk": "^5.3.0",
+    "glob": "^10.3.10"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
